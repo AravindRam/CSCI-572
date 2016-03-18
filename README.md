@@ -1,4 +1,4 @@
-# CSCI 572 - Information Retrieval from Web Search Engines
+# Information Retrieval from Web Search Engines
 
 
 This repository contains the assignments done as part of the coursework.
