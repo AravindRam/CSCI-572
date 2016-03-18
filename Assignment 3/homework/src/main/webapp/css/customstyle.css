@@ -1,0 +1,49 @@
+#logo {
+    /*display: inline-block;
+    width: 320px;
+    margin-top: 9px;
+    margin-left: 9px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    color: #9d9d9d;
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;*/
+
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+    color: #fff;
+    float: left;
+    height: 50px;
+    font-size: 21px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+#header {
+    background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
+}
+
+.project-selector {
+    color: #9d9d9d;
+}
+
+.project-selector:hover {
+    color: #fff;
+}
+
+#project-context > :first-child, .project-context > :first-child {
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #fff;
+    padding-left: 0;
+    text-align: left;
+}
+
+#project-context, .project-context {
+    display: inline-block;
+    padding: 7px 30px 0;
+    position: relative;
+}

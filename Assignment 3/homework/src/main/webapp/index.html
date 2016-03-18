@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us" data-ng-app="homeworkApp">
+	<head>
+		<meta charset="utf-8">
+		<title> Weapons search </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/theme.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/skins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/rtl.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/customstyle.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		<!--link rel="stylesheet" href="js/khooshe/css/main.css" rel="stylesheet" /-->
+	</head>
+	<body class="" data-ng-controller="HomeworkAppController">
+
+		<header id="header" data-ng-include="'includes/header.html'"></header>
+
+		<aside id="left-panel"><span data-ng-include="'includes/left-panel.html'"></span></aside>
+		<div id="main" role="main">
+			<div id="content" data-ng-view="" class="view-animate"></div>
+		</div>
+		<div class="page-footer"><span data-ng-include="'includes/footer.html'"></span></div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="js/app.config.js"></script>
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/notification/notification.min.js"></script>
+		<script src="js/widgets/jarvis.widget.min.js"></script>
+		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+		<script src="js/plugin/select2/select2.min.js"></script>
+		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+		<script src="js/plugin/fastclick/fastclick.min.js"></script>
+		<!--[if IE 8]>
+			<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+		<![endif]-->
+
+		<!-- AngularJS -->
+		<script src="js/libs/angular/angular.js"></script>
+	  	<script src="js/libs/angular/angular-route.js"></script>
+	  	<script src="js/libs/angular/angular-animate.js"></script>
+	  	<script src="js/libs/angular/ui-bootstrap-custom-tpls-0.11.0.js"></script>
+
+		<!-- D3 JS -->
+		<script src="js/d3/d3.v3.min.js"></script>
+		<script src="js/d3/timeseries/timeseries.js"></script>
+		<script src="js/d3/timeseries/underscore.js"></script>
+		<script src="js/d3/timeseries/moment.js"></script>
+		<script src="js/d3/donut3d/donut3d.js"></script>
+
+		<!-- Khooshe -->
+		<script src="js/khooshe/js/queue.v1.min.js"></script>
+		<script src="js/khooshe/js/topojson.v1.min.js"></script>
+
+		<script src="js/app.js"></script>
+	  	<script src="js/ng/ng.app.js"></script>
+	  	<script src="js/ng/ng.controllers.js"></script>
+	  	<script src="js/ng/ng.directives.js"></script>
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	</body>
+
+</html>

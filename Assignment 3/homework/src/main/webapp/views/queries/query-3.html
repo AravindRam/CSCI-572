@@ -1,0 +1,170 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-bar-chart-o"></i> Queries <span> > Query 3</span></h1>
+    </div>
+</div>
+
+<style type="text/css">
+    /* TimeSeries CSS */
+    .timeseries {
+        width: 100%;
+        padding: 2% 0;
+    }
+    .timeseries svg{
+        width: 100%;
+    }
+    .circ {
+        fill: #D35400;
+        opacity: 0.6;
+        stroke: rgba(211, 84, 0, 0.7);
+        stroke-width: 5px;
+    }
+    .domain {
+        display: none;
+    }
+    .axis path, .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    .axis text {
+        font-size: 12px;
+    }
+    .tick line {
+        stroke: #d5d5d5;
+        opacity: 0.7;
+    }
+    .brush .extent {
+        stroke: #fff;
+        fill-opacity: .125;
+        shape-rendering: crispEdges;
+    }
+    .clear-brush {
+        display: none;
+    }
+    .brush-control {
+        padding: .5%;
+        width: 100%;
+        text-align: center;
+    }
+    .brush-info {
+        display: inline-block;
+        font-size: 14px;
+    }
+</style>
+<section id="widget-grid" class="">
+
+    <div class="row" ng-controller="Query3Controller" ng-submit="submit()">
+
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="alert alert-warning">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4 class="no-margin">When a shipment of bulk firearms is stolen, the rate of ads and images
+                            may indicate an increase in sales of that particular make/model – can you
+                            identify these ? </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="jarviswidget" id="wid-id-300">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                    <h2>Query 3 : Search Filter </h2>
+                </header>
+
+                <div>
+                    <div class="jarviswidget-editbox">
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="widget-body">
+                        <form class="form-horizontal">
+
+                            <fieldset>
+                                <legend>Query Search Filter</legend>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Keywords</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" placeholder="Enter Search Keywords" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="multiselect1">Weapon Categories</label>
+                                    <div class="col-md-10">
+                                        <select multiple="multiple" id="multiselect1" class="form-control custom-scroll" title="Click to Select a Weapon Category">
+                                            <option>Shotguns</option>
+                                            <option>Rifles</option>
+                                            <option>Pistol</option>
+                                            <option>Handguns</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Date when the shipment was stolen</label>
+                                    <div class="col-md-4">
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" datepicker-popup="{{format}}"
+                                                   ng-model="dt" is-open="opened" min-date="minDate" max-date="'2020-12-12'"
+                                                   datepicker-options="dateOptions"  ng-required="false" close-text="Close" />
+                                              <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                              </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default" type="reset">
+                                                Cancel
+                                            </button>
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="fa fa-save"></i>
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="jarviswidget" id="wid-id-30">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                    <h2>Time Series</h2>
+                </header>
+                <div>
+                    <div class="jarviswidget-editbox">
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="widget-body">
+                        <div class="timeseries"></div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<script type="text/javascript">
+
+    pageSetUp();
+
+</script>

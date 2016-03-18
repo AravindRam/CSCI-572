@@ -1,0 +1,96 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-bar-chart-o"></i> Queries <span> > Query 4</span></h1>
+    </div>
+</div>
+
+<section id="widget-grid" class="">
+
+    <div class="row" ng-controller="Query4Controller" ng-submit="submit()">
+
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="alert alert-info">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4 class="no-margin">Can you identify ads and/or weapons images that are posted by persons,
+                            whom are underage or in which the weapons are de-identified (by type
+                            and/or serial number, etc.) </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="jarviswidget" id="wid-id-400">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                    <h2>Query 4 : Search Filter </h2>
+                </header>
+
+                <div>
+                    <div class="jarviswidget-editbox">
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="widget-body">
+                        <form class="form-horizontal">
+
+                            <fieldset>
+                                <legend>Query Search Filter</legend>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Keywords</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" placeholder="Enter Search Keywords" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default" type="reset">
+                                                Cancel
+                                            </button>
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="fa fa-save"></i>
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="jarviswidget" id="wid-id-40">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                    <h2>Bubble Chart</h2>
+                </header>
+                <div>
+                    <div class="jarviswidget-editbox">
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="widget-body">
+                        <div class="bubblechart"></div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<script type="text/javascript">
+
+    pageSetUp();
+
+</script>
