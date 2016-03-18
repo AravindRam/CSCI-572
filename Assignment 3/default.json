@@ -1,0 +1,565 @@
+{
+  "title": "BANANA DASHBOARD",
+  "services": {
+    "query": {
+      "idQueue": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "list": {
+        "0": {
+          "query": "guns",
+          "alias": "",
+          "color": "#7EB26D",
+          "id": 0,
+          "pin": false,
+          "type": "lucene"
+        }
+      },
+      "ids": [
+        0
+      ]
+    },
+    "filter": {
+      "idQueue": [
+        0,
+        1,
+        2
+      ],
+      "list": {},
+      "ids": []
+    }
+  },
+  "rows": [
+    {
+      "title": "Query and Time Window",
+      "height": "50px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "error": false,
+          "span": 8,
+          "editable": true,
+          "spyable": true,
+          "group": [
+            "default"
+          ],
+          "type": "query",
+          "label": "Search",
+          "history": [
+            "guns",
+            "*"
+          ],
+          "remember": 10,
+          "pinned": true,
+          "query": "*",
+          "title": "Query",
+          "def_type": ""
+        },
+        {
+          "span": 4,
+          "editable": true,
+          "type": "hits",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0\n",
+            "basic_query": "",
+            "custom": ""
+          },
+          "style": {
+            "font-size": "28pt"
+          },
+          "arrangement": "horizontal",
+          "chart": "total",
+          "counter_pos": "above",
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "spyable": true,
+          "show_queries": true,
+          "title": "HITS"
+        }
+      ]
+    },
+    {
+      "title": "TERMS",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 4,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0&fq=-category:a&fq=-category:n&facet=true&facet.field=category&facet.limit=10&facet.missing=true",
+            "custom": ""
+          },
+          "mode": "count",
+          "field": "category",
+          "stats_field": "",
+          "decimal_points": 0,
+          "exclude": [
+            "a",
+            "n"
+          ],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "descending",
+          "style": {
+            "font-size": "10pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "logAxis": false,
+          "arrangement": "vertical",
+          "chart": "pie",
+          "counter_pos": "left",
+          "lastColor": "",
+          "spyable": true,
+          "show_queries": true,
+          "chartColors": [
+            "#7EB26D",
+            "#EAB839",
+            "#6ED0E0",
+            "#EF843C",
+            "#E24D42",
+            "#1F78C1",
+            "#BA43A9",
+            "#705DA0",
+            "#508642",
+            "#CCA300",
+            "#447EBC",
+            "#C15C17",
+            "#890F02",
+            "#0A437C",
+            "#6D1F62",
+            "#584477",
+            "#B7DBAB",
+            "#F4D598",
+            "#70DBED",
+            "#F9BA8F",
+            "#F29191",
+            "#82B5D8",
+            "#E5A8E2",
+            "#AEA2E0",
+            "#629E51",
+            "#E5AC0E",
+            "#64B0C8",
+            "#E0752D",
+            "#BF1B00",
+            "#0A50A1",
+            "#962D82",
+            "#614D93",
+            "#9AC48A",
+            "#F2C96D",
+            "#65C5DB",
+            "#F9934E",
+            "#EA6460",
+            "#5195CE",
+            "#D683CE",
+            "#806EB7",
+            "#3F6833",
+            "#967302",
+            "#2F575E",
+            "#99440A",
+            "#58140C",
+            "#052B51",
+            "#511749",
+            "#3F2B5B",
+            "#E0F9D7",
+            "#FCEACA",
+            "#CFFAFF",
+            "#F9E2D2",
+            "#FCE2DE",
+            "#BADFF4",
+            "#F9D9F9",
+            "#DEDAF7"
+          ],
+          "title": "GUN CATEGORY"
+        },
+        {
+          "span": 8,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0&fq=-Geographical_Name_State:a&fq=-Geographical_Name_State:n&facet=true&facet.field=Geographical_Name_State&facet.limit=20&facet.missing=true",
+            "custom": ""
+          },
+          "mode": "count",
+          "field": "Geographical_Name_State",
+          "stats_field": "",
+          "decimal_points": 0,
+          "exclude": [
+            "a",
+            "n"
+          ],
+          "missing": false,
+          "other": false,
+          "size": 20,
+          "order": "descending",
+          "style": {
+            "font-size": "10pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "logAxis": false,
+          "arrangement": "vertical",
+          "chart": "bar",
+          "counter_pos": "left",
+          "lastColor": "",
+          "spyable": true,
+          "show_queries": true,
+          "chartColors": [
+            "#7EB26D",
+            "#EAB839",
+            "#6ED0E0",
+            "#EF843C",
+            "#E24D42",
+            "#1F78C1",
+            "#BA43A9",
+            "#705DA0",
+            "#508642",
+            "#CCA300",
+            "#447EBC",
+            "#C15C17",
+            "#890F02",
+            "#0A437C",
+            "#6D1F62",
+            "#584477",
+            "#B7DBAB",
+            "#F4D598",
+            "#70DBED",
+            "#F9BA8F",
+            "#F29191",
+            "#82B5D8",
+            "#E5A8E2",
+            "#AEA2E0",
+            "#629E51",
+            "#E5AC0E",
+            "#64B0C8",
+            "#E0752D",
+            "#BF1B00",
+            "#0A50A1",
+            "#962D82",
+            "#614D93",
+            "#9AC48A",
+            "#F2C96D",
+            "#65C5DB",
+            "#F9934E",
+            "#EA6460",
+            "#5195CE",
+            "#D683CE",
+            "#806EB7",
+            "#3F6833",
+            "#967302",
+            "#2F575E",
+            "#99440A",
+            "#58140C",
+            "#052B51",
+            "#511749",
+            "#3F2B5B",
+            "#E0F9D7",
+            "#FCEACA",
+            "#CFFAFF",
+            "#F9E2D2",
+            "#FCE2DE",
+            "#BADFF4",
+            "#F9D9F9",
+            "#DEDAF7"
+          ],
+          "title": "STATES"
+        }
+      ]
+    },
+    {
+      "title": "TAGCLOUD",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
+          "type": "tagcloud",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0&facet=true&facet.field=content&facet.limit=1000",
+            "custom": ""
+          },
+          "field": "content",
+          "size": 1000,
+          "alignment": "vertical and horizontal",
+          "fontScale": 1,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Tagcloud"
+        }
+      ]
+    },
+    {
+      "title": "MAP",
+      "height": "350px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
+          "type": "map",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0&facet=true&facet.field=abbrStateName&facet.limit=100",
+            "custom": ""
+          },
+          "mode": "count",
+          "field": "abbrStateName",
+          "stats_field": "",
+          "decimal_points": 0,
+          "map": "usa",
+          "colors": [
+            "#A0E2E2",
+            "#265656"
+          ],
+          "size": 100,
+          "exclude": [],
+          "spyable": true,
+          "index_limit": 0,
+          "show_queries": true,
+          "title": "US MAP"
+        }
+      ]
+    },
+    {
+      "title": "HEATMAP",
+      "height": "250px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 6,
+          "editable": true,
+          "type": "heatmap",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&wt=json&rows=0&facet=true&facet.pivot=category,abbrStateName&facet.limit=300&facet.pivot.mincount=0",
+            "custom": ""
+          },
+          "size": 0,
+          "row_field": "category",
+          "col_field": "abbrStateName",
+          "row_size": 300,
+          "editor_size": 300,
+          "color": "blue",
+          "spyable": true,
+          "transpose_show": true,
+          "transposed": false,
+          "show_queries": true,
+          "title": "HEATMAP"
+        },
+        {
+          "span": 6,
+          "editable": true,
+          "type": "scatterplot",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&fl=id,price,category&wt=csv&rows=1000",
+            "custom": ""
+          },
+          "max_rows": 1000,
+          "field": "date",
+          "xAxis": "Date",
+          "yAxis": "Rates",
+          "fl": "open,high,low,close",
+          "rightAxis": "volume",
+          "spyable": true,
+          "show_queries": true,
+          "title": "SCATTERPLOT",
+          "xaxis": "id",
+          "yaxis": "price",
+          "field_type": "category"
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "height": "650px",
+      "editable": true,
+      "collapse": true,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
+          "group": [
+            "default"
+          ],
+          "type": "table",
+          "size": 100,
+          "pages": 5,
+          "offset": 0,
+          "sort": [
+            "id",
+            "desc"
+          ],
+          "style": {
+            "font-size": "9pt"
+          },
+          "overflow": "min-height",
+          "fields": [
+            "message",
+            "content"
+          ],
+          "highlight": [],
+          "sortable": true,
+          "header": true,
+          "paging": true,
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=guns&sort=id desc&wt=json&rows=500",
+            "basic_query": "q=guns&sort=id desc"
+          },
+          "field_list": true,
+          "status": "Stable",
+          "trimFactor": 300,
+          "normTimes": true,
+          "title": "Events",
+          "time_field": "event_timestamp",
+          "important_fields": [
+            "_version_",
+            "address_s",
+            "attr_content",
+            "attr_content_encoding",
+            "attr_dc_title",
+            "attr_h2",
+            "attr_h3",
+            "attr_meta",
+            "attr_pre",
+            "attr_span",
+            "attr_stream_content_type",
+            "attr_stream_name",
+            "attr_stream_size",
+            "attr_stream_source_info",
+            "cat",
+            "compName_s",
+            "content_type",
+            "features",
+            "id",
+            "inStock",
+            "includes",
+            "incubationdate_dt",
+            "links",
+            "manu",
+            "manu_exact",
+            "manu_id_s",
+            "manufacturedate_dt",
+            "name",
+            "payloads",
+            "popularity",
+            "price",
+            "price_c",
+            "price_c____amount_raw",
+            "price_c____currency",
+            "store",
+            "store_0_coordinate",
+            "store_1_coordinate",
+            "text",
+            "title",
+            "weight",
+            "Geographical_Name_State",
+            "sellerStartDate",
+            "buyerStartDate",
+            "category",
+            "content"
+          ],
+          "saveOption": "json",
+          "exportSize": 500,
+          "exportAll": true,
+          "displayLinkIcon": true,
+          "imageFields": [],
+          "imgFieldWidth": "auto",
+          "imgFieldHeight": "85px",
+          "show_queries": true
+        }
+      ]
+    }
+  ],
+  "editable": true,
+  "index": {
+    "interval": "none",
+    "pattern": "[logstash-]YYYY.MM.DD",
+    "default": "_all"
+  },
+  "style": "light",
+  "failover": false,
+  "panel_hints": true,
+  "loader": {
+    "save_gist": true,
+    "save_elasticsearch": true,
+    "save_local": true,
+    "save_default": true,
+    "save_temp": true,
+    "save_temp_ttl_enable": true,
+    "save_temp_ttl": "30d",
+    "load_gist": true,
+    "load_elasticsearch": true,
+    "load_elasticsearch_size": 20,
+    "load_local": true,
+    "hide": false,
+    "dropdown_collections": false
+  },
+  "solr": {
+    "server": "/solr/",
+    "core_name": "memexcollection",
+    "core_list": [
+      "collection1",
+      "memexcollection"
+    ],
+    "global_params": ""
+  }
+}

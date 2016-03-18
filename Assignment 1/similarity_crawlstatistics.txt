@@ -1,0 +1,17 @@
+CrawlDb statistics start: similaritycrawl/crawldb/
+Statistics for CrawlDb: similaritycrawl/crawldb/
+TOTAL urls:	1308845
+retry 0:	1222242
+retry 1:	84266
+retry 2:	2333
+retry 3:	4
+min score:	0.0
+avg score:	0.08040201
+max score:	1.0
+status 1 (db_unfetched):	135489
+status 2 (db_fetched):	1000879
+status 3 (db_gone):	49683
+status 4 (db_redir_temp):	28184
+status 5 (db_redir_perm):	54239
+status 7 (db_duplicate):	40371
+CrawlDb statistics: done

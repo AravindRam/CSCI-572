@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+  <name>http.agent.name</name>
+  <value>team1</value>
+  <description></description>
+</property>
+
+<property>
+  <name>http.agent.rotate</name>
+  <value>true</value>
+  <description></description>
+</property>
+
+<property>
+  <name>http.agent.rotate.file</name>
+  <value>agents.txt</value>
+  <description></description>
+</property>
+
+
+<property>
+  <name>db.ignore.external.links</name>
+  <value>true</value>
+  <description>If true, outlinks leading from a page to external hosts
+  will be ignored. This is an effective way to limit the crawl to include
+  only initially injected hosts, without creating complex URLFilters.
+  </description>
+</property>
+
+<property>
+  <name>db.ignore.internal.links</name>
+  <value>false</value>
+  <description>If true, outlinks leading from a page to external hosts
+  will be ignored. This is an effective way to limit the crawl to include
+  only initially injected hosts, without creating complex URLFilters.
+  </description>
+</property>
+
+
+<property>
+  <name>fetcher.threads.per.queue</name>
+  <value>8</value>
+  <description>This number is the maximum number of threads that
+    should be allowed to access a queue at one time. Setting it to 
+    a value > 1 will cause the Crawl-Delay value from robots.txt to
+    be ignored and the value of fetcher.server.min.delay to be used
+    as a delay between successive requests to the same server instead 
+    of fetcher.server.delay.
+   </description>
+</property>
+
+
+<property>
+  <name>http.robot.rules.whitelist</name>
+  <value>4chan.org</value>
+  <description>Comma separated list of hostnames or IP addresses to ignore robot rules parsing for.
+  </description>
+</property>
+
+<property>
+  <name>http.content.limit</name>
+  <value>6553611</value>
+  <description>The length limit for downloaded content using the file://
+  protocol, in bytes. If this value is nonnegative (>=0), content longer
+  than it will be truncated; otherwise, no truncation at all. Do not
+  confuse this setting with the http.content.limit setting.
+  </description>
+</property>
+
+<!--
+For running the crawl with scoring similarity plugin
+-->
+<property>
+    <name>scoring.similarity.model.path</name>
+    <value>goldstandard.txt</value>
+</property>
+
+<property>
+    <name>scoring.similarity.stopword.file</name>
+    <value>stopwords.txt</value>
+</property>
+
+<property>
+    <name>plugin.includes</name> 
+    <value>protocol-http|urlfilter-regex|parse-(html|tika)|scoring-similarity|urlnormalizer-(pass|regex|basic)</value>
+</property>
+
+<!--End for scoring similarity plugin -->
+
+<!--For selenium uncomment this section and comment out of the previous plugin.includes 
+
+<property>
+  <name>plugin.includes</name>
+  <value>protocol-interactiveselenium|protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+  <description>Regular expression naming plugin directory names to
+  include.  Any plugin not matching this expression is excluded.
+  In any case you need at least include the nutch-extensionpoints plugin. By
+  default Nutch includes crawling just HTML and plain text via HTTP,
+  and basic indexing and search plugins. In order to use HTTPS please enable 
+  protocol-httpclient, but be aware of possible intermittent problems with the 
+  underlying commons-httpclient library. Set parsefilter-naivebayes for classification based focused crawler.
+  </description>
+</property>
+
+<property>
+  <name>interactiveselenium.handlers</name>
+  <value>GunsSiteCustomHandler,DefaultHandler</value>
+  <description>
+    A comma separated list of Selenium handlers that should be run for a given
+    URL. The DefaultHandler causes the same functionality as protocol-selenium.
+    Custom handlers can be implemented in the plugin package and included here.
+  </description>
+</property>
+
+-->
+
+
+</configuration>

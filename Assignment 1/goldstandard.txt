@@ -1,0 +1,155 @@
+gun
+firearms
+arms
+explosive
+shotgun
+rifle
+assault
+automatic
+bullet
+colt
+Alexander Arms
+American Tactical Imports
+ArmaLite
+Auto-Ordnance
+Baikal
+Barret Firearms
+Barrett Rifles
+Benelli
+Beretta
+Bersa
+Blaser
+Bond Arms
+Browning
+Bushmaster
+Century Arms
+Charter Arms
+Christensen Arms
+CMMG
+Colt
+CZ Firearms
+Dan Wesson
+Diamondback Firearms
+DPMS Firearms
+Fiocchi Ammo
+FNH
+Freedom Arms
+Galil
+Glock
+GSG Firearms
+Harrington
+Heckler and Koch
+Heritage Arms
+Hi-Point Firearms
+Holland and Holland
+Hornady Ammo
+HS Precision
+Iver Johnson Firearms
+JR Carbine
+Kahr
+Kahr CW9
+Kel Tec
+Kimber
+Knights Armament
+Krieghoff
+Les Baer
+Magnum Research
+Magpul
+Makarov
+Marlin
+MasterPiece Arms
+Mauser
+Mossberg
+New England Firearms
+Nighthawk Custom
+Norinco
+North American Arms
+Olympic Arms
+Para Ordnance
+Perazzi
+Phoenix Arms
+Puma Firearms
+Remington
+Rock Island Armory
+Rock River Arms
+Rossi
+Ruger
+Saiga
+Sako
+Savage Arms
+Sig Sauer
+SKS
+Smith and Wesson
+Springfield Armory
+Stag Arms
+Stevens Firearms
+Steyr Firearms
+Taurus Firearms
+Thompson/Center Firearms
+Uberti
+Uzi
+Walther
+Weatherby
+Wilson Combat
+Winchester
+Long gun
+Arquebus
+Blunderbuss
+Musket
+Musketoon
+Wall gun
+Grenade launcher
+Submachine gun
+Personal defense weapon
+Rifle
+Lever-action rifle
+Bolt-action rifle
+Lee–Enfield Jungle Carbine chambered in .303 British
+Assault rifle
+Battle rifle
+Carbine
+Service rifle
+Sniper rifle
+Shotgun
+Combat shotgun
+Semi-automatic shotgun
+Automatic shotgun
+Machine guns
+Gatling gun
+Minigun
+Nordenfelt gun
+Metal Storm
+Mitrailleuse
+Submachine gun
+Machine pistol
+Machine gun
+General-purpose machine gun
+Light machine gun
+Squad Automatic Weapon
+Infantry Automatic Rifle
+Medium machine gun
+Heavy machine gun
+Handguns
+Mamba Pistol
+Handgun
+Service pistol
+Revolver
+Service revolver
+Machine pistol
+Autocannon
+Chain gun
+Revolver cannon
+Artillery
+Artillery gun
+Cannon
+Carronade
+Falconet
+Field gun
+Howitzer
+Tank
+Tank gun
+Hunting
+Elephant gun
+Express rifle
+Shotgun
+Varmint rifle
