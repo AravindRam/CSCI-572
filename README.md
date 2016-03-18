@@ -1,5 +1,5 @@
-# CSCI-572
-Information Retrieval from Web Search Engines
+# CSCI 572 - Information Retrieval from Web Search Engines
+
 
 Assignments done as part of CSCI 572 - Information Retrieval from Web Search Engines Coursework.
 
