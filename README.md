@@ -1,7 +1,9 @@
 # CSCI 572 - Information Retrieval from Web Search Engines
 
 
-Assignments done as part of CSCI 572 - Information Retrieval from Web Search Engines Coursework.
+This repository contains the assignments done as part of the coursework.
+
+A brief overview of what the assignments are :
 
 Assignment 1 - Crawling around 80 urls to retrieve images of weapons using Apache Nutch.
 Assignment 2 - Extracting text and metadata from the images using Apache Tika and indexing the crawled data from the previous assignment using Apache Solr.
